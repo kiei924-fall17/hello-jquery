@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather</title>
+  <meta charset="utf-8">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/f9001c39ac.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkJMD1_etDjCXpjESOcixlKT1_U0QfYh4"
+    async defer></script>
+  <script src="helpers.js"></script>
+  <script src="weather.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-6 ml-auto mr-auto text-left">
+        <input type="text" id="location-name" class="form-control" placeholder="Where to?">
+        <button id="get-the-weather" class="btn btn-primary mt-1">Get the weather!</button>
+      </div>
+    </div>
+    <div class="row current" style="display:none">
+      <div class="col">
+        <h1 id="current-conditions-icon"></h1>
+        <h1 id="location"></h1>
+        <h2 id="current-conditions-text"></h2>
+      </div>
+    </div>
+    <div class="row forecast" style="display:none">
+      <!-- Behold, the emptiness -->
+    </div>
+  </div>
+</body>
+</html>
